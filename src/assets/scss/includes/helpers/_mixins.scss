@@ -1,0 +1,68 @@
+// Delay
+
+// Default display flex styles
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+%flex-nowrap {
+  @extend %flex-row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+%flex-wrap {
+  @extend %flex-nowrap;
+  flex-wrap: wrap;
+}
+%flex-wrap-center {
+  @extend %flex-wrap;
+  justify-content: center;
+}
+// Default shadow styles
+@mixin shadow-sm {
+  box-shadow: 0 0 8px rgba(161, 161, 161, 0.1);
+}
+@mixin shadow($color: rgba(161, 161, 161, 0.1)) {
+  box-shadow: 0 4px 8px $color;
+}
+@mixin rounded($engle: 4px) {
+  border-radius: $engle;
+}
+// custom components
+@mixin cta-btn($primary, $secondary) {
+  border: 1px solid $primary;
+  background-color: $primary;
+  color: $secondary;
+  &:hover {
+    background-color: transparent;
+    color: $primary;
+    @include shadow(rgba($primary, 0.1));
+  }
+}
+
+@mixin cta-btn-alt($primary, $secondary) {
+  border: 1px solid $primary;
+  color: $primary;
+  &:hover {
+    color: $secondary;
+    background-color: $primary;
+    @include shadow(rgba($primary, 0.1));
+  }
+}
+
+%cta-btns {
+  a {
+    display: inline-block;
+    padding: 0.5rem 0.6rem;
+    @include rounded;
+    font-weight: 600;
+    transition: all 250ms ease-in-out;
+  }
+
+  .or {
+    margin: 0 0.4rem;
+    display: inline-block;
+    color: $shuttle-gray;
+  }
+}

@@ -1,0 +1,21 @@
+@import "includes/helpers/colors";
+
+@import "includes/helpers/variables";
+// Reset all browsers to a defualt style
+@import "includes/helpers/reset";
+@import "includes/plugins/animate";
+@import "includes/helpers/mixins";
+// Global classes for general use
+@import "includes/helpers/global_classes";
+// Sections
+@import "sections/header";
+@import "sections/service-features";
+@import "sections/about.scss";
+@import "sections/services";
+@import "sections/work";
+@import "sections/testimonial";
+@import "sections/contact";
+@import "sections/footer";
+
+// Dark theme
+@import "includes/dark-theme";

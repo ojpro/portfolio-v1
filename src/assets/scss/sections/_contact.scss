@@ -1,0 +1,62 @@
+.contact {
+  background-color: $jaguar;
+  padding-top: 1rem;
+  .section-title {
+    color: $white;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 98%;
+    @media (max-width:$phone){
+      width: 96%;
+    }
+    margin: auto;
+    .context {
+      color: $wild-sand;
+      h4 {
+        color: $wild-sand;
+      }
+    }
+    form {
+      background-color: $shark;
+      padding: 0.4rem;
+      @include rounded;
+      @include shadow(rgba($tundora, 0.2));
+      margin-bottom: -0.4rem;
+      div {
+        margin: 0.6rem;
+        position: relative;
+        input,
+        textarea {
+          border: 1px solid $mercury;
+          padding: 0.5rem;
+          @include rounded;
+          width: 100%;
+          min-width: 100%;
+        }
+        textarea {
+          max-width: 400px;
+        }
+      }
+      button[type="submit"] {
+        padding: .4rem .6rem;
+        display: block;
+        margin: .2rem auto;
+        background-color: $royal-blue;
+        color: $white;
+        border: 1px solid $dodger-blue;
+        @include rounded;
+        cursor: pointer;
+        &:hover{
+          @include shadow(rgba($dodger-blue,.1));
+          opacity: .9;
+        }
+      }
+    }
+  }
+}

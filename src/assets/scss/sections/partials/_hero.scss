@@ -1,0 +1,43 @@
+.hero {
+  position: relative;
+  // Make the bellow a single extend line
+  @extend %flex-wrap;
+  justify-content: space-around;
+  gap: 4rem;
+  padding: 16vh;
+  @media (max-width:$tablet){
+    padding: 8vh;
+  }
+  background-color: $jaguar;
+  &-headings {
+    h1 {
+      font-weight: 900;
+      font-size: 1.8rem;
+      color: $white;
+      span.hand{
+        display: inline-block;
+        @extend .animated;
+        @extend .tada;
+        @extend .animated.infinite;
+      }
+    }
+    .call-to-action-buttons {
+      @extend %cta-btns;
+      // made the above buttons as single componnets
+      .about-btn {
+        @include cta-btn($dodger-blue, $wild-sand);
+      }
+      .hire-btn {
+        @include cta-btn-alt($sunglow, $jaguar);
+      }
+    }
+  }
+  &-image {
+    position: relative;
+    img {
+      width: 100%;
+      max-width: 30rem;
+      height: auto;
+    }
+  }
+}

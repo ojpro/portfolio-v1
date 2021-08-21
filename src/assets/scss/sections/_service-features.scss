@@ -1,0 +1,64 @@
+.service-features {
+  padding: 0 2rem;
+  position: relative;
+  .container {
+    background-color: $white;
+    @include rounded(6px);
+    @extend %flex-nowrap;
+    gap: 1rem;
+    width: 84%;
+    margin: -4rem auto 2rem;
+    @include shadow($color: rgba(60, 60, 60, 0.1));
+    text-align: center;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    .service {
+      position: relative;
+      padding: 2rem;
+      @media (max-width: $tablet) {
+        width: 80%;
+        background-color: $white;
+        @include rounded(6px);
+        @include shadow($color: rgba(145, 145, 145, 0.1));
+        &:hover {
+          @include shadow($color: rgba(98, 98, 98, 0.1));
+          transform: scale(1.01);
+          transition: 250ms ease-in-out;
+        }
+      }
+      @media (max-width:$phone){
+        width: 100%;
+      }
+      &_icon {
+        width: 3rem;
+        height: auto;
+        margin: 0.2rem;
+      }
+      &_description {
+        color: $shark;
+      }
+      &:nth-of-type(2) {
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 3rem; //this value repeated all the time
+          width: 2px;
+          height: 50%;
+          background-color: $black-squeeze;
+          @media (max-width: $tablet) {
+            display: none;
+          }
+        }
+        &::after {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+// Display classes
+.d-block {
+  display: block !important;
+  @extend .animated;
+}
+
+.section-title {
+  text-align: center;
+}
