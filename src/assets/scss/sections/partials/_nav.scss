@@ -1,0 +1,105 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: $nav-height;
+  @media (max-width:$tablet){
+    height: 3rem;
+  }
+  padding:0 1rem;
+  @extend %flex-nowrap;
+  @include shadow;
+  background-color: $white;
+  z-index: 9;
+  // make logo in generale use variables
+  /* logo will be used many times so make it as a component*/
+  .nav-logo {
+    display: block;
+    a {
+      font-size: 1.3rem;
+      font-weight: 800; //include Nunito font for bold support
+      color: $jaguar;
+      .nav-logo-dot {
+        color: $royal-blue;
+      }
+    }
+  }
+  .nav-links {
+    ul {
+      li {
+        margin-right: 0.8rem;
+        display: inline-block;
+        position: relative;
+        padding: 0.5rem;
+        @include rounded;
+        &:not(:last-of-type):hover {
+          @media (min-width: $tablet) {
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0.6rem;
+              height: 24%;
+              width: 100%;
+              background-color: rgba($sunglow, 0.9);
+              z-index: -1;
+            }
+          }
+          @media (max-width: $tablet) {
+            background-color: $wild-sand;
+          }
+        }
+        a {
+          color: $jaguar;
+          font-weight: 600;
+        }
+        .nav-theme-switcher {
+          cursor: pointer;
+          .lni-sun {
+            color: $sunglow;
+          }
+          .lni-night{
+            color: $dodger-blue;
+          }
+        }
+      }
+    }
+    @media (max-width: $tablet) {
+      position: absolute;
+      top: $nav-height;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      display: none;
+      background-color: $white;
+      @include shadow;
+      padding: 1rem;
+      z-index: 9; // max z-index
+    }
+    @media (max-width: $phone) {
+      height: calc(100vh - #{$nav-height});
+      ul li {
+        display: block;
+        &:not(:last-of-type) {
+          margin-bottom: 1rem;
+        }
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+  .nav-menu-toggler {
+    display: none;
+    position: absolute;
+    right: 1.6rem;
+    top: 50%;
+    transform: translateY(-40%);
+    cursor: pointer;
+    //  Show the menu toggler button
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+}

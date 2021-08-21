@@ -1,0 +1,8 @@
+// Start header section design
+header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  @import "partials/nav";
+  @import "partials/hero";
+}

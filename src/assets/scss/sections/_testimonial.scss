@@ -1,0 +1,68 @@
+.testimonial {
+  padding: 1rem 2rem;
+  .container {
+    margin: 2rem auto;
+    position: relative;
+    max-width: 600px;
+    .boxes-container {
+      .box {
+        margin: auto;
+        max-width: 500px;
+        padding: 2rem;
+        transform: rotate(1deg); // repeated
+        @include rounded;
+        border: 1px solid $wild-sand;
+        display: none;
+        // background-color: $screamin-green;
+        color: $white;
+        &:hover {
+          transform: rotate(0deg);
+          transition: 259ms ease-in-out;
+        }
+        .quotation-icon {
+          background-color: $white;
+          display: block;
+          width: 24px;
+          height: 24px;
+          padding: 0.2rem;
+          text-align: center;
+          margin: 0 auto 1rem;
+          border-radius: 50%;
+          color: $jaguar;
+        }
+        .client {
+          @extend %flex-nowrap;
+          margin: 1rem auto;
+          text-align: center;
+          .rate .lni {
+            color: $sunglow;
+          }
+        }
+      }
+    }
+    .next,
+    .prev {
+      position: absolute;
+      top: 50%;
+      left: 0.2rem;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 1.85rem;
+      @include rounded(50%);
+      background-color: $white;
+      @include shadow(rgba($shark,.1));
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: $jaguar;
+      &:hover{
+        box-shadow: none;
+        background-color: $wild-sand;
+      }
+    }
+    .next {
+      left: auto;
+      right: 0.2rem;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  span{
+      .lni:hover{
+        @extend .animated;
+        @extend .animated.infinite;
+        @extend .animated.hinge;
+      }
+      .lni-heart-filled{
+          color: red;
+          &:hover{
+              @extend .bounce;
+          }
+      }
+      .lni-coffee-cup{
+          color: brown;
+          &:hover{
+            @extend .headShake;
+          }
+      }
+  }
+}
