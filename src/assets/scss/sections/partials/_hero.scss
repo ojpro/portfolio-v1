@@ -12,13 +12,12 @@
   &-headings {
     h1 {
       font-weight: 900;
-      font-size: 1.8rem;
+      font-size: 1.8em;
       color: $white;
       span.hand{
         display: inline-block;
         @extend .animated;
         @extend .tada;
-        @extend .animated.infinite;
       }
     }
     .call-to-action-buttons {
