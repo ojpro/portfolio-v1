@@ -28,7 +28,7 @@ section {
   animation-duration: 1s;
   animation-fill-mode: both; }
 
-.animated.infinite, .infinite.d-block, header .hero-headings h1 span.hand, .work .container .infinite.project:hover, .work .container .project:hover .infinite.info, footer span .lni:hover {
+.animated.infinite, .infinite.d-block, header .hero-headings h1 span.infinite.hand, .work .container .infinite.project:hover, .work .container .project:hover .infinite.info, footer span .lni:hover {
   animation-iteration-count: infinite; }
 
 .animated.hinge, .hinge.d-block, header .hero-headings h1 span.hinge.hand, .work .container .hinge.project:hover, .work .container .project:hover .hinge.info, footer span .lni:hover {
@@ -184,13 +184,13 @@ header {
     background-color: #fff;
     z-index: 9;
     /* logo will be used many times so make it as a component*/ }
-    @media (max-width: 772px) {
+    @media (max-width: 48em) {
       header nav {
         height: 3rem; } }
     header nav .nav-logo {
       display: block; }
       header nav .nav-logo a {
-        font-size: 1.3rem;
+        font-size: 1.3em;
         font-weight: 800;
         color: #01020B; }
         header nav .nav-logo a .nav-logo-dot {
@@ -203,7 +203,7 @@ header {
         position: relative;
         padding: 0.5rem;
         border-radius: 4px; }
-        @media (min-width: 772px) {
+        @media (min-width: 48em) {
           header nav .nav-links ul li:not(:last-of-type):hover::before {
             content: "";
             position: absolute;
@@ -213,7 +213,7 @@ header {
             width: 100%;
             background-color: rgba(255, 196, 48, 0.9);
             z-index: -1; } }
-        @media (max-width: 772px) {
+        @media (max-width: 48em) {
           header nav .nav-links ul li:not(:last-of-type):hover {
             background-color: #f4f4f4; } }
         header nav .nav-links ul li a {
@@ -225,7 +225,7 @@ header {
             color: #ffc430; }
           header nav .nav-links ul li .nav-theme-switcher .lni-night {
             color: #3069ff; }
-    @media (max-width: 772px) {
+    @media (max-width: 48em) {
       header nav .nav-links {
         position: absolute;
         top: 2.5rem;
@@ -237,7 +237,7 @@ header {
         box-shadow: 0 4px 8px rgba(161, 161, 161, 0.1);
         padding: 1rem;
         z-index: 9; } }
-    @media (max-width: 530px) {
+    @media (max-width: 30em) {
       header nav .nav-links {
         height: calc(100vh - 2.5rem); }
         header nav .nav-links ul li {
@@ -247,13 +247,14 @@ header {
           header nav .nav-links ul li a {
             display: block; } }
     header nav .nav-menu-toggler {
+      will-change: transform;
       display: none;
       position: absolute;
       right: 1.6rem;
       top: 50%;
       transform: translateY(-40%);
       cursor: pointer; }
-      @media (max-width: 772px) {
+      @media (max-width: 48em) {
         header nav .nav-menu-toggler {
           display: block; } }
   header .hero {
@@ -262,12 +263,12 @@ header {
     gap: 4rem;
     padding: 16vh;
     background-color: #01020B; }
-    @media (max-width: 772px) {
+    @media (max-width: 48em) {
       header .hero {
         padding: 8vh; } }
     header .hero-headings h1 {
       font-weight: 900;
-      font-size: 1.8rem;
+      font-size: 1.8em;
       color: #fff; }
       header .hero-headings h1 span.hand {
         display: inline-block; }
@@ -304,7 +305,7 @@ header {
     margin: -4rem auto 2rem;
     box-shadow: 0 4px 8px rgba(60, 60, 60, 0.1);
     text-align: center; }
-    @media (max-width: 772px) {
+    @media (max-width: 48em) {
       .service-features .container {
         flex-direction: column;
         background-color: transparent;
@@ -312,7 +313,7 @@ header {
     .service-features .container .service {
       position: relative;
       padding: 2rem; }
-      @media (max-width: 772px) {
+      @media (max-width: 48em) {
         .service-features .container .service {
           width: 80%;
           background-color: #fff;
@@ -322,7 +323,7 @@ header {
             box-shadow: 0 4px 8px rgba(98, 98, 98, 0.1);
             transform: scale(1.01);
             transition: 250ms ease-in-out; } }
-      @media (max-width: 530px) {
+      @media (max-width: 30em) {
         .service-features .container .service {
           width: 100%; } }
       .service-features .container .service_icon {
@@ -339,7 +340,7 @@ header {
         width: 2px;
         height: 50%;
         background-color: #f0f5f9; }
-        @media (max-width: 772px) {
+        @media (max-width: 48em) {
           .service-features .container .service:nth-of-type(2)::after, .service-features .container .service:nth-of-type(2)::before {
             display: none; } }
       .service-features .container .service:nth-of-type(2)::after {
@@ -351,7 +352,7 @@ header {
   margin: 2rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr; }
-  @media (max-width: 772px) {
+  @media (max-width: 48em) {
     .about .container {
       grid-template-columns: 1fr; } }
   .about .container .photo .container {
@@ -485,7 +486,7 @@ header {
       .work .container .project:hover .info .links a {
         display: inline-block;
         margin-right: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.2em;
         font-weight: bolder; }
     .work .container .project img {
       width: 100%;
@@ -561,7 +562,7 @@ header {
     gap: 2rem;
     width: 98%;
     margin: auto; }
-    @media (max-width: 530px) {
+    @media (max-width: 30em) {
       .contact .container {
         width: 96%; } }
     .contact .container .context {
@@ -616,7 +617,7 @@ body.dark-theme {
     box-shadow: 0 4px 8px rgba(1, 2, 11, 0.2); }
     body.dark-theme header nav .nav-logo a {
       color: #f4f4f4; }
-    @media (max-width: 772px) {
+    @media (max-width: 48em) {
       body.dark-theme header nav .nav-links {
         background-color: #1d1f20; } }
     body.dark-theme header nav .nav-links ul li:not(:last-of-type):hover {
@@ -633,10 +634,10 @@ body.dark-theme {
       color: #f4f4f4; }
   body.dark-theme .service-features .container {
     background-color: #01020B; }
-    @media (max-width: 772px) {
+    @media (max-width: 48em) {
       body.dark-theme .service-features .container {
         background-color: transparent; } }
-    @media (max-width: 772px) {
+    @media (max-width: 48em) {
       body.dark-theme .service-features .container .service {
         background-color: #01020B; } }
     body.dark-theme .service-features .container .service_description {
