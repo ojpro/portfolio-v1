@@ -17,7 +17,7 @@ nav {
   .nav-logo {
     display: block;
     a {
-      font-size: 1.3rem;
+      font-size: 1.3em;
       font-weight: 800; //include Nunito font for bold support
       color: $jaguar;
       .nav-logo-dot {
@@ -92,6 +92,7 @@ nav {
     }
   }
   .nav-menu-toggler {
+    will-change: transform;
     display: none;
     position: absolute;
     right: 1.6rem;
