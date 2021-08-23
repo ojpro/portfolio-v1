@@ -14,18 +14,12 @@
       border-radius: 8px;
       @include shadow;
       position: relative;
-      // project box background by the [project-image-source] variable
-      // url("../images/projects/project1.png")
-      background-image: var(--project-image-source);
-      background-repeat: no-repeat;
-      background-position: top center;
-      background-size: cover;
       .info {
         display: none;
       }
       &:hover {
-        // animate the project image down
-          animation: scrollDown 10s linear infinite forwards,tada 1s ease-in-out;
+        @extend .animated;
+        @extend .tada;
         &::after {
           content: "";
           position: absolute;
@@ -69,14 +63,8 @@
         }
       }
       & img {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        max-width: 100%;
-        min-height: 100%;
-        display: block;
-        z-index: -1;
+        width: 100%;
+        height: auto;
       }
     }
   }
