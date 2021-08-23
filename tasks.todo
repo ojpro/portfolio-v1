@@ -35,6 +35,7 @@ Tasks:
     - copy/paste anly needed animations
     - add cv
     - use single animation method css/animate.css
+    - use Localstorage for theme preferance
 
 Next up:
     - timeline
