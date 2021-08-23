@@ -32,7 +32,6 @@ function toggler(el, classes) {
 
 $(".nav-menu-toggler").addEventListener("click", (e) => {
   $(".nav-links").classList.toggle("d-block");
-  $(".nav-links").classList.toggle("bounceInRight");
   toggler($(".nav-menu-toggler").children[0], ["lni-menu", "lni-close"]);
 });
 //! the 2 are the same
