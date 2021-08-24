@@ -416,7 +416,7 @@ header {
         border: 1px solid #ffc430;
         color: #ffc430; }
         .about .container .context .call-to-action-buttons .resume-btn:hover {
-          color: #f4f4f4;
+          color: #fff;
           background-color: #ffc430;
           box-shadow: 0 4px 8px rgba(255, 196, 48, 0.1); }
 
