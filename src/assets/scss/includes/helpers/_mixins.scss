@@ -26,8 +26,8 @@
 @mixin shadow($color: rgba(161, 161, 161, 0.1)) {
   box-shadow: 0 4px 8px $color;
 }
-@mixin rounded($engle: 4px) {
-  border-radius: $engle;
+@mixin rounded($angle: 4px) {
+  border-radius: $angle;
 }
 // custom components
 @mixin cta-btn($primary, $secondary) {

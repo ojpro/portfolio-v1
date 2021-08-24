@@ -1,7 +1,7 @@
 @import "includes/helpers/colors";
 
 @import "includes/helpers/variables";
-// Reset all browsers to a defualt style
+// Reset all browsers to a default style
 @import "includes/helpers/reset";
 @import "includes/plugins/animate";
 @import "includes/helpers/mixins";
@@ -10,7 +10,7 @@
 // Sections
 @import "sections/header";
 @import "sections/service-features";
-@import "sections/about.scss";
+@import "sections/about";
 @import "sections/services";
 @import "sections/work";
 @import "sections/testimonial";
