@@ -16,6 +16,10 @@ let colors_list = [
   "#2c3e50",
   "#795548",
 ];
+
+(function LazyImagesLoading(){
+  $all('img').forEach(image=>image.setAttribute('loading','lazy'))
+})();
 /* 
   toggler
   toggle between 2 class for an element
