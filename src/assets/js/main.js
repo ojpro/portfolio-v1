@@ -46,14 +46,14 @@ document.querySelectorAll(".nav-links ul li").forEach((el) => {
   });
 });
 /*
-  changeBackgorundColor(el): change element's background color
+  changeBackgroundColor(el): change element's background color
   el: the element that it's background will changed
   1. Generate random number that's less that Colors Array items length
   2. Choice Color depends on the random number
-  3. Change the element backgroudn color
+  3. Change the element background color
 */
-//? useing API will be better, then no need for many elemnts
-function changeBackgorundColor(el) {
+//? using API will be better, then no need for many elements
+function changeBackgroundColor(el) {
   let random_number = Math.round(Math.random() * colors_list.length);
   let color = colors_list[random_number];
   el.style.backgroundColor = color;
@@ -66,24 +66,24 @@ function testimonialNavigate(direction) {
     if (direction === "previous") {
       if (testimonials[0] !== current_testimonial) {
         current_testimonial.previousElementSibling.classList.add("d-block");
-        changeBackgorundColor(current_testimonial.previousElementSibling); //! Very Bad way
+        changeBackgroundColor(current_testimonial.previousElementSibling); //! Very Bad way
       } else {
         testimonials[testimonials.length - 1].classList.add("d-block");
-        changeBackgorundColor(testimonials[testimonials.length - 1]); //! Very Bad way
+        changeBackgroundColor(testimonials[testimonials.length - 1]); //! Very Bad way
       }
     } else {
       if (testimonials[testimonials.length - 1] != current_testimonial) {
         current_testimonial.nextElementSibling.classList.add("d-block");
-        changeBackgorundColor(current_testimonial.nextElementSibling); //! Very Bad way
+        changeBackgroundColor(current_testimonial.nextElementSibling); //! Very Bad way
       } else {
         testimonials[0].classList.add("d-block");
-        changeBackgorundColor(testimonials[0]); //! Very Bad way
+        changeBackgroundColor(testimonials[0]); //! Very Bad way
       }
     }
   }
 }
 
-// Auto aupdate footer right's year
+// Auto update footer right's year
 function updateFooterRightYear() {
   let current_year = new Date().getFullYear();
   $("footer span .year").textContent = current_year;
@@ -98,9 +98,9 @@ function updateFooterRightYear() {
 })();
 window.onload = () => {
   // Change footer background
-  changeBackgorundColor($("footer"));
+  changeBackgroundColor($("footer"));
   // Change current testimonial background
-  changeBackgorundColor(testimonials[0]);
+  changeBackgroundColor(testimonials[0]);
   // Initialize Animate On Scroll Plugin (AOS)
   AOS.init();
   // Auto update footer right's year
