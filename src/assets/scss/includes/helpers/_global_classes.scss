@@ -7,3 +7,11 @@
 .section-title {
   text-align: center;
 }
+
+.highlight{
+  @include rounded(2px);
+  padding: 0 .5rem;
+  &.blue{
+    background-color: $dodger-blue;
+  }
+}
