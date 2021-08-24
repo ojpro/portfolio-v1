@@ -37,6 +37,8 @@ Tasks:
     - use single animation method css/animate.css
     - use LocalStorage for theme preferences
     - resize images in work sections
+    - check spelling using grammaly
+    - favicon
 
 Next up:
     ☐ - timeline
