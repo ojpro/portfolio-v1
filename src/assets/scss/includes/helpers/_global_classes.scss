@@ -8,10 +8,11 @@
   text-align: center;
 }
 
-.highlight{
-  @include rounded(2px);
-  padding: 0 .5rem;
-  &.blue{
+.highlight {
+  &.bg-blue {
     background-color: $dodger-blue;
+  }
+  &.color-blue {
+    color: $dodger-blue;
   }
 }
