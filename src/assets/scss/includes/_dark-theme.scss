@@ -4,7 +4,7 @@ body.dark-theme {
   header {
     nav {
       background-color: $shark;
-      @include shadow(rgba($jaguar,.2));
+      @include shadow(rgba($jaguar, 0.2));
       .nav-logo a {
         color: $wild-sand;
       }
@@ -29,10 +29,12 @@ body.dark-theme {
   .section-title {
     color: $wild-sand;
   }
-  .about{
-    .context{
+  .about {
+    .context {
       border: 1px solid $tundora;
-      p{color: $wild-sand;}
+      p {
+        color: $wild-sand;
+      }
     }
   }
   .service-features {
@@ -58,16 +60,12 @@ body.dark-theme {
       }
     }
   }
-  .services {
-    .container {
-      .service {
-        &:hover{
-          @include shadow(rgba($jaguar,.2))
-        }
-        & p {
-          color: $wild-sand;
-        }
-      }
+  .services .container .service {
+    &:hover {
+      @include shadow(rgba($jaguar, 0.2));
+    }
+    & p {
+      color: $wild-sand;
     }
   }
 }
