@@ -169,6 +169,12 @@ header .hero-headings .call-to-action-buttons .or, .about .container .context .c
 .section-title {
   text-align: center; }
 
+.highlight.bg-blue {
+  background-color: #3069ff; }
+
+.highlight.color-blue {
+  color: #3069ff; }
+
 header {
   width: 100%;
   height: auto;
