@@ -4,10 +4,10 @@ nav {
   left: 0;
   width: 100vw;
   height: $nav-height;
-  @media (max-width:$tablet){
+  @media (max-width: $tablet) {
     height: 3rem;
   }
-  padding:0 1rem;
+  padding: 0 1rem;
   @extend %flex-nowrap;
   @include shadow;
   background-color: $white;
@@ -18,7 +18,7 @@ nav {
     display: block;
     a {
       font-size: 1.3em;
-      font-weight: 800; //include Nunito font for bold support
+      font-weight: 800;
       color: $jaguar;
       .nav-logo-dot {
         color: $royal-blue;
@@ -60,7 +60,7 @@ nav {
           .lni-sun {
             color: $sunglow;
           }
-          .lni-night{
+          .lni-night {
             color: $dodger-blue;
           }
         }
