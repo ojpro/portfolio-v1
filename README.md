@@ -2,7 +2,7 @@
 ## Overview
 That is the repository for my portfolio, where I share all of my work, freelance projects, challenges, and achievements.
 > you can see it on [https://ojpro.me](https://ojpro.me) or go to [screenshots](#Screenshots)
-### 💡 Wait a minute!. What do ojpro means?
+### 💡 Wait a minute!. What does ojpro means?
 Nice question!. Because you "know" that my name is Oussama El Jabbari and I Love Programming, I mixed those words to make this name where:
 + o => Oussama
 + j => Jabbari
